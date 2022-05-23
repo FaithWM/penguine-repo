@@ -1,0 +1,372 @@
+:root {
+    --background: rgb(162, 162, 230);
+    --background1: rgb(46, 139, 215);
+    --background2: #7d97ac;
+    --background3: red;
+    --background4: rgb(99, 183, 251);
+    --penguine-color1: rgb(8, 8, 8);
+    --penguine-color2: #e5e5e5;
+    --beak-color: rgb(35, 26, 9);
+    --eye-ball: linear-gradient(90deg, #e5e5e5, #878686); 
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto&display=swap");
+
+
+
+body {
+    background: linear-gradient(45deg,var(--background1), var(--background) );
+    width: 100vw;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+.ground {
+    width: 110vw;
+    height: 220px;
+     background: linear-gradient(90deg, var(--background1), var(--background));
+    position: absolute;
+    bottom: 0;  
+    z-index: 2;
+    margin-top: -120px;
+    margin-left: -30px;
+
+}
+.mountain {
+     width: 200px;
+    height: 450px;
+    background: linear-gradient(-45deg, var(--background4), var(--background1));
+    transform: rotate(-42deg);
+    position: absolute;
+    z-index: 1; 
+    margin-left: -40px;
+    margin-top: 130px;
+}
+.back-mountain {
+    width: 120px;
+    height: 420px;
+    background: linear-gradient(-45deg, var(--background4), var(--background1));
+    position: absolute;
+    z-index: 0;
+    border-radius: 12px 100% 12px 12px;
+    transform: rotate(-42deg);
+    top: 30px;
+    left: 120px;
+    margin-top: 82px;
+}
+.sky-ball {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+}
+.mountain-ball1 {
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(45deg, var(--background4), var(--background1));
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 260px;
+    left: 135px;
+}
+.mountain-ball2 {
+    width: 10px;
+    height: 16px;
+    background: linear-gradient(45deg, var(--background4), var(--background1));
+    position: absolute;
+    z-index: 2;
+    top: 255px;
+    left: 108px;
+    transform: rotate(320deg);
+}
+
+.sun {
+    width: 70px;
+    height: 70px;
+    background: rgb(250, 250, 41);
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+}
+
+.penguine.head {
+    width: 115px;
+    height: 97px;
+    background: black;
+    position: absolute;
+    top: 180px;
+    left: 500px;
+    border-radius: 100% 100% 100% 100%;
+}
+.face1 {
+    width: 70px;
+    height: 67px;
+    background: var(--penguine-color2);
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 5.5px;    
+}
+.face2 {
+    width: 70px;
+    height: 68px;
+    background: var(--penguine-color2);
+    border-radius: 100%;
+    position: absolute;
+    top: 13px;
+    right: 5.5px;
+}  
+.face3 {
+    width: 102px;
+    height:78px;
+    background: var(--penguine-color2);
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    }
+    .left-eye {
+        width: 16px;
+        height:16px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        z-index: 3;
+        top: 37px;
+        left: 21px;
+    }
+    .right-eye {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        z-index: 3;
+        top: 37px;
+        right: 19px;
+    }
+
+    .eye-ball1 {
+        width: 6px;
+        height: 6px;
+        background: var(--eye-ball);
+        position: absolute;
+        z-index: 2;
+        top: 5px;
+        left: 3px;
+        border-radius: 85%;
+    }
+    .eye-ball2 {
+        width: 6px;
+        height: 6px;
+        background: var(--eye-ball);
+        position: absolute;
+        z-index: 2;
+        top: 5px;
+        right: 7px;
+        border-radius: 50%;
+    }
+    .blush1 {
+        width: 18px;
+        height: 11px;
+        background: pink;
+        position: absolute;
+        top: 57px;
+        left: 11px;
+        z-index: 3;
+        border-radius: 80% 80% 80% 80%;
+    }
+    .blush2 {
+        width: 18px;
+        height: 11px;
+        background: pink;
+        position: absolute;
+        top: 57px;
+        right: 11px;
+        z-index: 3;
+        border-radius: 80% 80% 80% 80%;
+    }
+    .beak1 {
+        width: 26px;
+        height: 10px;
+         background: rgb(230, 230, 61); 
+        position: absolute;
+        z-index: 3;
+        top: 54px;
+        left: 40px;
+        border-radius: 40%;
+    }
+    .beak2 {
+        width: 20px;
+        height: 11px;
+        background: rgb(230, 230, 61);
+        position: absolute;
+        z-index: 3;
+        top: 58px;
+        left: 9px;
+        border-radius: 100%;
+    
+    }
+    .penguine.body {
+        width: 140px;
+        height: 130px;
+         background: black;
+        position: absolute;
+        z-index: 0;
+        left: 485px;
+        top: 258px;
+        border-radius: 90% 90% 100% 100%;
+        z-index: -1;
+
+    }
+    .penguine-belly {
+        width: 125px;
+        height: 120px;
+        background: var(--penguine-color2);
+        border-radius: 90% 90% 100% 100%;
+        position: absolute;
+        left: 7px;
+        top: 6px;
+    }
+    .fins1 {
+        width: 100px;
+        height: 50px;
+        border-radius: 20% 20% 20% 100%;
+        background: black;
+        position: absolute;
+        z-index: -1;
+        top: 280px;
+        left: 452px;
+        transform: rotate(-41deg);
+        animation: anim 2s infinite both ease;
+    }
+    .fins2 {
+        width: 100px;
+        height: 50px;
+        border-radius: 100% 20% 20% 20%;
+        background: black;
+        position: absolute;
+        z-index: -1;
+        top: 275px;
+        left: 555px;
+        transform: rotate(210deg);
+    }
+     .fins1:hover {
+         animation-play-state: paused;
+     }
+     .penguine-foot1 {
+         width: 50px;
+         height: 27px;
+         background: black;
+         position: absolute;
+         left: 500px;
+         top: 370px;
+         z-index: -1;
+         border-radius: 45%;
+         transform: rotate(-33deg);
+         animation: animate infinite 0.7s both ease;
+     }
+     .penguine-foot2 {
+        width: 50px;
+        height: 27px;
+        background: black;
+        position: absolute;
+        left: 555px;
+        top: 370px;
+        z-index: -1;
+        border-radius: 45%;
+        transform: rotate(33deg);
+        animation: innate infinite 0.8s both ease;
+    }
+    
+    .step1 {
+        width: 160px;
+        height: 100px;
+        position: absolute;
+        left: 480px;
+        top: 395px;
+        background:  linear-gradient(-45deg, var(--background4), var(--background1));
+        border-radius: 100% 100% 0 0;
+    }
+    .step2 {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        left: 380px;
+        top: 395px;
+        background:  linear-gradient(-45deg, var(--background4), var(--background1));
+        border-radius: 100% 100% 0 0;
+    }
+
+    .step3 {
+        width: 120px;
+        height: 70px;
+        position: absolute;
+        z-index: -1;
+        left: 340px;
+        top: 395px;
+        background:  linear-gradient(-45deg, var(--background4), var(--background1));
+        border-radius: 100% 100% 0 0;
+    }
+
+    .hello {
+        width: 80px;
+        height: 80px;
+        font-family: poppins, san-serif;
+        font-size: 13px;
+        text-align: center;
+        font-weight: bold;
+        color: brown;
+        border-radius: 10px 30px 30px;
+        background: var(--background);
+        position: absolute;
+        left: 300px;
+        top: 200px;
+        padding: 30px 0;
+        box-sizing: border-box;
+
+    }
+
+    @keyframes anim {
+       0% {
+           transform: rotate(-41deg);
+       } 
+       50% {
+           transform: rotate(-25deg);
+       }
+    }
+    .shirt {
+        width: 50px;
+        height: 30px;
+        font-family: poppins, sans-serif;
+        background: var(--background1);
+        position: absolute;
+        left: 530px;
+        top: 280px;
+        border-radius: 30% 30% 100% 100%;
+        font-size: 12px;
+        text-align: center;
+        color: pink;
+    }
+    @keyframes animate {
+        0% {
+            transform: rotate(-33deg);
+        }
+        50% {
+            transform: rotate(-15deg);
+        }
+    }
+    @keyframes innate {
+        0% {
+            transform: rotate(33deg);
+        }
+        50% {
+            transform: rotate(15deg);
+        }
+        }
+    
